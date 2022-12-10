@@ -40,14 +40,14 @@ function NewBlogPage(props) {
 
   return (
     <div className='container'>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={ onSubmit }>
             <h2 className='mb-1 mt-2 d-flex justify-content-start'>Create a New Blog!</h2>
             <input 
                 className='form-control w-25' 
                 type='text' 
                 placeholder="New Blog Name"
-                onChange={handleNameInput}
-                value={blogName}>
+                onChange={ handleNameInput }
+                value={ blogName }>
                 </input>
             <button 
                 className='btn btn-outline-info text-dark mx-0 mt-2 d-flex justify-content-start' 

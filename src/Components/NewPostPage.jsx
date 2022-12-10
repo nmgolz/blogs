@@ -20,7 +20,7 @@ const handleContInput = (e) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    addPost({postName, postContent, id, allblogId})
+    addPost({ postName, postContent, id, allblogId })
     setPostName('');
     setPostCont('');
 }
@@ -29,22 +29,22 @@ useEffect(() => {
 }, [blog])
 
   return (
-    <form onSubmit={onSubmit} className='container'>
+    <form onSubmit={ onSubmit } className='container'>
       <p className='my-2 d-flex justify-content-start'>Post Title</p>
       <input 
         className='form-control w-25 my-2' 
         placeholder='Post Title' 
         type='text'
-        onChange={handleNameInput}
-        value={postName}
-      ></input>
+        onChange={ handleNameInput }
+        value={ postName }>
+      </input>
       <textarea 
         className='form-control my-2' 
         type='text' 
         rows="4" 
         placeholder='Write your blog post here'
-        onChange={handleContInput}
-        value={postContent}>
+        onChange={ handleContInput }
+        value={ postContent }>
       </textarea>
       <button type='submit' className='btn btn-outline-info mt-2 text-dark'>Create Blog Post</button>
     </form>
