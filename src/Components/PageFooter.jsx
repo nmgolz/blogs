@@ -13,7 +13,6 @@ function PageFooter() {
             <div className='col text-center'>
             </div>
             <div className='col text-center'>
-
             </div>
         </div>
     </div>

@@ -65,7 +65,7 @@ export default function Routes() {
               fetchList={fetchList} 
             />
           </div>
-          <div className="col">
+          <div className="col-sm">
               <Image />
             </div>
         </div>
