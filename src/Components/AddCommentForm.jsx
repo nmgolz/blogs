@@ -40,7 +40,7 @@ function CommentForm(props) {
                 rows="4" 
                 placeholder='Write a Comment Here!'></textarea>
             <button 
-                className='btn btn-outline-info text-dark mx-0 mt-2 d-flex justify-content-start' 
+                className='form-control w-50 btn btn-outline-info text-dark mx-0 mt-2 d-flex justify-content-center' 
                 type='submit'>Submit</button>
         </form>
     </div>
