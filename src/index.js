@@ -37,11 +37,6 @@ const router = createBrowserRouter([
         path: 'createblog',
         element: <NewBlogPage />,
         loader: rootLoader
-      },
-      {
-        path: '/createpost',
-        element: <NewPostPage />,
-        loader: rootLoader
       }
     ]
   },
