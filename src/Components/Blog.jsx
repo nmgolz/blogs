@@ -46,10 +46,10 @@ function Blog() {
                             <div  key={id} className='container mt-2'>
                             <div key={id} className='card'>
                                 <div className='card-header text-center'>
-                                    <h4>{postName}</h4>
+                                    <h4>{ postName }</h4>
                                 </div>
                                 <div className='card-body'>
-                                    {postContent}
+                                    { postContent }
                                     <button 
                                         className="btn btn-outline-danger d-flex align-items-end" 
                                         onClick={(e) => deletePost(id)}>
@@ -61,7 +61,7 @@ function Blog() {
                         ))}
                         <div>
                             <NewPostPage 
-                                blog={newBlog}
+                                blog={ newBlog }
                                 updatePosts={updatePosts}
                                 />
                         </div>
@@ -69,8 +69,8 @@ function Blog() {
                     <div className='card-footer'>
                         <div>
                             <CommentForm 
-                                blog={newBlog}
-                                updatePosts={updatePosts}/>
+                                blog={ newBlog }
+                                updatePosts={ updatePosts }/>
                         </div>
                     </div>
                 </div>
